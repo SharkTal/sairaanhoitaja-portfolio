@@ -905,6 +905,13 @@ img { max-width: 100%; height: auto; display: block; }
   font-size: 0.85rem;
   z-index: 2;
 }
+.timeline-dot svg {
+  color: #ffffff;
+}
+
+.skill-icon svg {
+  color: var(--primary);
+}
 
 .timeline-card {
   background: var(--bg-card);
