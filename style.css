@@ -989,3 +989,52 @@ img { max-width: 100%; height: auto; display: block; }
   .about, .projects, .skills, .contact, .clinical { padding: 80px 0; }
   .about-stats { grid-template-columns: 1fr 1fr; }
 }
+
+/* ===== FEATURED TIMELINE CARD (uusin harjoittelu) ===== */
+.timeline-item .timeline-card.featured {
+  background: linear-gradient(160deg, #EDF4FC 0%, #FFFFFF 58%);
+  border-color: rgba(0, 90, 156, 0.22);
+  border-left: 4px solid var(--primary-light);
+  box-shadow: 0 10px 30px rgba(0, 90, 156, 0.10);
+}
+.timeline-item .timeline-card.featured:hover {
+  box-shadow: 0 18px 45px rgba(0, 90, 156, 0.16);
+}
+.timeline-featured-tag {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--primary);
+  color: var(--text-light);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* ===== CONTACT CTA ===== */
+.contact-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  max-width: 760px;
+  margin: 44px auto 0;
+  padding: 26px 30px;
+  text-align: left;
+  background: linear-gradient(135deg, #F0F6FC 0%, #FFFFFF 70%);
+  border: 1px solid rgba(0, 90, 156, 0.18);
+  border-radius: var(--radius-lg);
+}
+.contact-cta-text {
+  flex: 1 1 320px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+.contact-cta-text strong { color: var(--text-primary); }
+.contact-cta .btn { flex: 0 0 auto; }
