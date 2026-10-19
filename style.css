@@ -1049,3 +1049,70 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .timeline-ref a:hover { color: var(--primary-light); border-bottom-color: var(--primary-light); }
 .timeline-ref a:focus-visible { outline: 2px solid var(--primary-light); outline-offset: 3px; border-radius: 2px; }
+
+/* ===== VALUE SECTION — Miten tuon arvoa tiimille? ===== */
+.value {
+  padding: 120px 0;
+  background: linear-gradient(180deg, #F2F7FD 0%, var(--bg-white) 100%);
+}
+.value-header { text-align: center; margin-bottom: 60px; }
+.value-header h2 { font-size: clamp(2rem, 3.5vw, 2.8rem); margin-bottom: 16px; }
+.value-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.value-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px 28px;
+  transition: var(--transition);
+}
+.value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-light);
+}
+.value-icon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 14px rgba(0, 90, 156, 0.3);
+}
+.value-icon svg { width: 28px; height: 28px; color: #ffffff; }
+.value-card h3 { font-size: 1.3rem; margin-bottom: 14px; color: var(--text-primary); }
+.value-card p { font-size: 1rem; line-height: 1.7; color: var(--text-muted); }
+.value-card p strong { color: var(--text-primary); font-weight: 600; }
+.value-link {
+  margin-top: auto;
+  padding-top: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+.value-link:hover { color: var(--primary-light); gap: 10px; }
+.value-link:focus-visible { outline: 2px solid var(--primary-light); outline-offset: 3px; border-radius: 4px; }
+
+@media (max-width: 768px) {
+  .value { padding: 80px 0; }
+  .value-grid { grid-template-columns: 1fr; gap: 24px; }
+}
