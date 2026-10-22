@@ -421,7 +421,9 @@ img { max-width: 100%; height: auto; display: block; }
   border-color: var(--primary-light);
 }
 .stat-number {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
   font-size: 2.2rem;
   color: var(--primary);
   display: block;
